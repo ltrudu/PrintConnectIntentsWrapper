@@ -2,12 +2,17 @@ plugins {
     alias(libs.plugins.android.library)
 }
 
+ext {
+    PUBLISH_GROUP_ID = 'com.zebra.printconnectintentswrapper'
+    PUBLISH_ARTIFACT_ID = 'printconnectintentswrapper'
+    PUBLISH_VERSION = '1.0'
+}
+
 android {
     namespace 'com.zebra.printconnectintentswrapper'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.zebra.printconnectintentswrapper"
         minSdk 33
         targetSdk 34
         versionCode 1
