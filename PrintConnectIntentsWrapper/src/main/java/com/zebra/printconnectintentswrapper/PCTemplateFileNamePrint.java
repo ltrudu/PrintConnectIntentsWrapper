@@ -119,7 +119,7 @@ public class PCTemplateFileNamePrint extends PCIntentsBase {
             }
         });
         intent.putExtra(PCConstants.PCTemplatePrintServiceResultReceiver, receiver);
-        mContext.startService(intent);
+        mContext.startForegroundService(intent);
     }
 
     private void PrintTemplateFileNameFromFileSystem(final PCTemplateFileNamePrintSettings settings)
@@ -206,7 +206,7 @@ public class PCTemplateFileNamePrint extends PCIntentsBase {
         // Register receiver for success and error handling
         intent.putExtra(PCConstants.PCTemplatePrintServiceResultReceiver, receiver);
         // Send intent to PrintConnect
-        this.mContext.startService(intent);
+        this.mContext.startForegroundService(intent);
     }
 
     @Override

@@ -104,7 +104,7 @@ public class PCLinePrintPassthroughPrint extends PCIntentsBase {
             }
         });
         intent.putExtra(PCConstants.PCTemplatePrintServiceResultReceiver, receiver);
-        mContext.startService(intent);
+        mContext.startForegroundService(intent);
     }
 
     @Override
