@@ -1,3 +1,9 @@
+# PrintConnectIntentsWrapper
+
+[![](https://jitpack.io/v/ltrudu/PrintConnectIntentsWrapper.svg)](https://jitpack.io/#ltrudu/PrintConnectIntentsWrapper)
+[![](https://jitpack.io/v/ltrudu/PrintConnectIntentsWrapper/month.svg)](https://jitpack.io/#ltrudu/PrintConnectIntentsWrapper)
+
+
 # END USER LICENSE AGREEMENT (UNRESTRICTED SOFTWARE)
 
 
