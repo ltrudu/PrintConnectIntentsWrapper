@@ -6,7 +6,7 @@ plugins {
 ext {
     PUBLISH_GROUP_ID = 'com.zebra.printconnectintentswrapper'
     PUBLISH_ARTIFACT_ID = 'printconnectintentswrapper'
-    PUBLISH_VERSION = '1.1'
+    PUBLISH_VERSION = '1.3'
 }
 
 android {
@@ -33,11 +33,18 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+            }
+        }
+    }
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
 }
